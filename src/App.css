@@ -1,5 +1,35 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: black;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: rgb(170, 1, 1);
+  color: white;
+}
+
 .App {
   text-align: center;
+  color: red;
+  font-size: calc(25px);
 }
 
 .App-logo {
@@ -10,23 +40,28 @@
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+    height: 250px;
+    width: 220px;
+    background-color: 'transparent';
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(30px + 2vmin);
   color: white;
 }
 
 .App-link {
   color: #61dafb;
 }
+
+
 
 @keyframes App-logo-spin {
   from {
@@ -36,3 +71,27 @@
     transform: rotate(360deg);
   }
 }
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #ff0000;
+	background:linear-gradient(to bottom, #ff0000 5%, rgb(188, 21, 21) 100%);
+	background-color:#ff0000;
+	border-radius:3px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:rgb(255, 255, 255);
+	font-family:Arial;
+	font-size:13px;
+	padding:10px 24px;
+	text-decoration:none;  
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #b90000 5%, #b90000 100%);
+	background-color:#b90000;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
