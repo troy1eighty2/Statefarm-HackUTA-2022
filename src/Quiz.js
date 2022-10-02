@@ -1,15 +1,9 @@
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom/client';
 import './Survey.css';
-import App from './App';
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import About from './About';
-import {Link } from "react-router-dom";
-import { Navigate } from "react-router-dom";
 
 
-export default function Quiz() {
-	
+
+export default function Quiz() { 
   const [businessOP, setBusinessOP] = useState(0)
   const [commercialAuto, setCommercialAuto] = useState(0)
   const [contractorsPolicy, setContractorsPolicy] = useState(0)
@@ -39,6 +33,15 @@ export default function Quiz() {
 		{
 			questionCategory: 'commercialAuto',
 			questionText: 'Does your business own or lease vehicles?',
+			answerOptions: [
+        	{ answerText: 'Yes', isCorrect: true},
+			{ answerText: 'No', isCorrect: false },
+			],
+		},
+
+		{
+			questionCategory: 'commercialAuto',
+			questionText: 'If you business have vehicles, is your company vechicle at risk of any accident?',
 			answerOptions: [
         	{ answerText: 'Yes', isCorrect: true},
 			{ answerText: 'No', isCorrect: false },
@@ -158,7 +161,7 @@ export default function Quiz() {
     if(bonds === max){
         max = 'bonds'
     }
-	
+
 	function ifStatement(max){
 		if (String(max) === 'businessOP'){
 		window.location.assign('https://www.statefarm.com/small-business-solutions/insurance/business-owners-policies');
@@ -181,7 +184,8 @@ export default function Quiz() {
 	}
 
 	if(currentQuestion >= questions.length){
-		ifStatement(max);
+		
+		setTimeout(ifStatement, 2000, max);
 	}
 
 	return (
@@ -196,9 +200,6 @@ export default function Quiz() {
 				{questions[currentQuestion].answerOptions.map((answerOption) => (
 					<button onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
 				))}
-			</div>
-			<div className='result'>
-				<h1>You qualify for this insurance: {max}</h1>
 			</div>
 		</div>
     );

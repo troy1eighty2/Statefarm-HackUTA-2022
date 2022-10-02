@@ -37,16 +37,36 @@ export default function About() {
                 <br></br>
                 <br></br>
                 Click the <strong>Take Survey</strong> button on the <strong>Home</strong> screen and answer a few questions and let our survey decide what options are best for you! 
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <strong>Sponsors:</strong>
+                <br></br>
+                <br></br>
+                <br></br>
             </div>
 
-            <div class="images">
-              <br></br>
-              <br></br>
-              <img src="https://image.modcdn.io/mods/e726/1561602/1s-removebg-preview.png"/> 
-              
-            </div> 
+            <img 
+                className='App-logo'
+                src = 'https://upload.wikimedia.org/wikipedia/commons/d/da/UTA_logomark.png'
+                alt = 'jakefromstatefarm'
+            />
+            <img 
+                className='App-logo'
+                src = 'https://static.mlh.io/brand-assets/logo/official/mlh-logo-color.png'
+                alt = 'jakefromstatefarm'
+            />
+            <img 
+                className='App-logo'
+                src = 'https://1000logos.net/wp-content/uploads/2018/04/State-Farm-Logo.png'
+                alt = 'jakefromstatefarm'
+            />
 
             <div class="footer">
+                
             Created by: Chidera Nwankwo, Vincent Trinh, Matthew Nguyen, Chau Nguyen, Troy Tran
             </div>
         </div>

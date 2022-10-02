@@ -1,8 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import React, {useState} from "react"
 import {Link } from "react-router-dom";
 import Header from './Header';
+
 
 import {
   BrowserRouter as Router,
@@ -14,8 +14,7 @@ import {
 
 function App() {
   const [count,setCount] = useState(0)
-  
-  
+
 
   return (
 
@@ -27,10 +26,7 @@ function App() {
                     About
                     </Link>
       </div>
-
-
-      
-
+    
       <img 
         src = "https://1000logos.net/wp-content/uploads/2018/04/State-Farm-Logo.png"
         alt = "Statefarm Logo"
